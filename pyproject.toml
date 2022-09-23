@@ -32,3 +32,7 @@ pytest-mock = "^3.8.2"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.plugins.console_scripts]
+word_count = "python_project.cmdline:main"

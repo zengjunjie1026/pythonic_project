@@ -1,7 +1,10 @@
 """Command line"""
 import click
 from click import Context
+import argparse
+import sys
 
+from python_project.counter import count
 from python_project import __version__
 from python_project.config import settings
 from python_project.log import init_log
@@ -39,11 +42,6 @@ def run():
     """Run command"""
     init_log()
     click.echo('run......')
-
-import argparse
-import sys
-
-from python_project.counter import count
 
 
 def init_args() -> argparse.Namespace:
